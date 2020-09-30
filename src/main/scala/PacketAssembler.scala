@@ -15,5 +15,9 @@ object PacketAssembler {
     acc + (msgid -> acc.get(msgid).map(l => content::l).getOrElse(List(content)))
 
   }
+  def fullMessage(acc: Map[Int, List[(Int, Int, String)]]): Option[Int] = { ???
+
+
+  }
 
 }
